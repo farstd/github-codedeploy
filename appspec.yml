@@ -3,16 +3,16 @@ os: linux
 
 files:
   - source: files/index.html
-  destination: /var/www/html
+    destination: /var/www/html
 
 permissions:
   - object: /var/www/html
-  pattern: index.html
-  owner: apache
-  group: apache
-  mode: 644
-  type:
-    - file
+    pattern: index.html
+    owner: apache
+    group: apache
+    mode: 644
+    type:
+      - file
 
 hooks:
   BeforeInstall:
